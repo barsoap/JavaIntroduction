@@ -14,7 +14,7 @@ public class chapter2_ {
 		
 		// p90
 		//改行せずに画面に文字を表示する
-		// System.out.print() ← System.out.println();との違いは？？
+		// System.out.print() ← System.out.println();との違いは？？改行するか、しないか(printlnは改行する！)
 		
 		
 		// p91
@@ -50,6 +50,7 @@ public class chapter2_ {
 		int age2 = new java.util.Scanner(System.in).nextInt();
 		System.out.println("ようこそ" + age2 + "歳の" + name2 + "さん");
 		
+		
 		// p97
 		// 練習2-1
 		int x = 5;
@@ -77,7 +78,7 @@ public class chapter2_ {
 		//⑤
 		String ageString = new java.util.Scanner(System.in).nextLine();
 		
-		//⑥ 変数ageStringの内容をint型に変換し、int型の変数ageに代入します。
+		//⑥ 変数ageStringの内容をint型に変換し、int型の変数ageに代入します。　　✖！
 		// int age3 = ageString;
 		int age3 = Integer.parseInt(ageString);
 		
