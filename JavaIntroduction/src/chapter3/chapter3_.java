@@ -72,6 +72,53 @@ public class chapter3_ {
 		} else {
 			System.out.println("凶");
 		}
+		//switch文に書き換え
+		//条件
+		//①条件式が==で左辺と右辺が一致するかを比較する式になっており、それ以外の>,<,!=などが使われていない。
+		//②比較する対象が整数(byte型、short型、int型のいずれか)、文字列(String型)または文字(char型)であり、小数や真偽地ではない。
+		switch (fortune) {
+			case 1 -> {
+				System.out.println("大吉");
+			}
+			case 2 -> {
+				System.out.println("中吉");
+			}
+			case 3 -> {
+				System.out.println("吉");
+			}
+			default -> {
+				System.out.println("凶");
+			}
+		}
+		//if else文が何重にもなる場合にはswitch文に置き換えた方がスッキリする！
+		
+		//p120 case文に複数の値を指定する
+		System.out.println("あなたの運勢を占います");
+		int  fortune2 = new java.util.Random().nextInt(5) + 1;
+		System.out.println(fortune2);
+		switch (fortune2) {
+			case 1,2 -> {
+				System.out.println("いいね");
+			}
+			case 3 -> {
+				System.out.println("普通です");
+			}
+			case 4,5 -> {
+				System.out.println("うーん・・・");
+			}
+		}
+		
+		//p121 伝統的なswitch文
+		System.out.println("あなたの運勢を占います");
+		int fortune3 = new java.util.Random().nextInt(5) + 1;
+		switch (fortune3) {
+			case 1,2:
+				System.out.println("いいね！");
+			case 3:
+				System.out.println("普通です");
+			case 4,5:
+				System.out.println("うーん");
+		}
 		
 	}
 
